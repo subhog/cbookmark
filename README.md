@@ -6,9 +6,9 @@ Bookmark your folders and switch between them quickly.
 
 
 
-## Usage:
+### Usage:
 
-### `cb bookmarkName` or `cb go bookmarkName`
+##### `cb bookmarkName` or `cb go bookmarkName`
 
 Go to the bookmark.
 Pro tip: you don't have to write the whole bookmark name,
@@ -16,25 +16,25 @@ an unique prefix is enough.
 
 
 
-### `cb add newBookmarkName`
+##### `cb add newBookmarkName`
 
 Add current directory as a new bookmark.
 
 
 
-### `cb remove bookmarkName`
+##### `cb remove bookmarkName`
 
 Remove named bookmark.
 
 
 
-### `cb list`
+##### `cb list`
 
-Display list of bookmarks
+Display list of bookmarks.
 
 
 
-### `cb help` or `cb`
+##### `cb help` or `cb`
 
 Display short help.
 
