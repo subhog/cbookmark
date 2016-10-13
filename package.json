@@ -9,7 +9,7 @@
   "license": "MIT",
   "preferGlobal": "true",
   "bin": {
-    "cb": "index.js"
+    "cb_process": "index.js"
   },
   "dependencies": {
     "chalk": "1.1.3",

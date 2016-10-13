@@ -1,7 +1,7 @@
 var _ = require('lodash');
 var chalk = require('chalk');
 
-module.exports = function(bookmark) {
+module.exports = function(bookmark, isModeDisplay) {
 
   var database = require('./databaseLoad')();
 
@@ -22,22 +22,23 @@ module.exports = function(bookmark) {
   }
 
   if(equal || results.length === 1) {
+    if(isModeDisplay) return console.log("CD");
+
     var path;
     if(equal) path = database[bookmark];
     else path = results[0].path;
 
-    console.log('');
-    console.log(chalk.green('  Bookmark found:'), path);
-    console.log('');
-    return;
+    return console.log(path);
   }
 
   if(results.length === 0) {
+    if(isModeDisplay) return console.log("ECHO");
     console.log('');
     console.log(chalk.red('  Unknown bookmark or command:'), bookmark);
     console.log('');
     return;
   }
+  if(isModeDisplay) return console.log("ECHO");
 
   console.log('');
   console.log(chalk.gray('  MULTIPLE MATCHES FOUND:'));
