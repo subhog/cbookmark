@@ -14,6 +14,7 @@ module.exports = function(database) {
     }
   );
 
+  lines.sort();
   fs.writeFileSync(path, lines.join('\n'));
 
 };
