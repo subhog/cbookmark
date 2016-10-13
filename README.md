@@ -6,6 +6,18 @@ Bookmark your folders and switch between them quickly.
 
 
 
+### Installation:
+
+Install the tool:
+
+    npm install -g cbookmark
+    cb_process install
+
+Then restart your terminal or load your `.profile` with
+
+    source `~/.profile`
+
+
 ### Usage:
 
 ##### `cb bookmarkName` or `cb go bookmarkName`
