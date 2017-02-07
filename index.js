@@ -22,7 +22,7 @@ var ensureFile = function(f, isFolder, cb) {
   fs.stat(file, function(err, stat) {
     if(stat) return cb();
     if(isFolder)
-      fs.mkdir(folder, cb);
+      fs.mkdir(file, cb);
     else
       fs.writeFile(file, '', {flag: 'a'}, cb);
   });
